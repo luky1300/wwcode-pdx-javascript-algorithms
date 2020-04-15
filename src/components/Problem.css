@@ -1,0 +1,13 @@
+.Problem__title {
+  font-weight: bold;
+}
+
+.Problem__note {
+  font-style: italic;
+}
+
+.Problem__answer-correct,
+.Problem__problem-solved {
+  font-weight: bold;
+  color: #048a81;
+}

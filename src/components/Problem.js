@@ -25,7 +25,7 @@ export default class Problem extends React.Component {
 
     return (
       <div className="Problem">
-        <p className="Problem__title">Problem: {title}</p>
+        <div className="Problem__title">Problem: {title}</div>
         {answerCorrect(example1Output, example1Answer) &&
           answerCorrect(example2Output, example2Answer) && (
             <p className="Problem__problem-solved">Problem Solved!</p>
@@ -36,24 +36,24 @@ export default class Problem extends React.Component {
         <p>Input: {example1Input.toString()}</p>
         <p>Output: {example1Output.toString()}</p>
         <p>Answer: {example1Answer.toString()}</p>
-        <p>
+        <div>
           {answerCorrect(example1Output, example1Answer) ? (
             <p className="Problem__answer-correct">Correct!</p>
           ) : (
             <p className="Problem__answer-incorrect">Not quite!</p>
           )}
-        </p>
+        </div>
         <p className="Problem__title">Example 2:</p>
         <p>Input: {example2Input.toString()}</p>
         <p>Output: {example2Output.toString()}</p>
         <p>Answer: {example2Answer.toString()}</p>
-        <p>
+        <div>
           {answerCorrect(example2Output, example2Answer) ? (
             <p className="Problem__answer-correct">Correct!</p>
           ) : (
             <p className="Problem__answer-incorrect">Not quite!</p>
           )}
-        </p>
+        </div>
         {source && (
           <a
             className="Problem__source"
